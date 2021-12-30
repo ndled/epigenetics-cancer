@@ -1,0 +1,25 @@
+Noah Ledbetter R Project Program
+
+Notes for Running:
+1) Ensure your hg19 data is in your working directory. 
+2) This will likely take ~2 hours to run through each chr.
+
+Function Descriptions
+
+delete.na: Function removes rows with that have more than n missing values for either the forward or reverse sections of the merged dataframe.
+
+pval_meandif_calculation: Calculates pvalue with wilcoxsign_test and the mean difference between the forward and reverse strands.
+
+clust_hist: Creates a histogram of the length of CpG clusters. Histograms are saved as {dfName} Histogram of Cluster Length.jpg in the working directory.
+
+cluster_hist_zoomed: Creates a histogram of the length of a cpg cluster, removing clusters > 100 in length. Histograms are saved as {dfName}zoomed.jpg in the working directory.
+
+grouping: Creates groups with ungrouped items assigned to group 0
+
+size_of_df: Returns the size of a data frame when filtered under certain conditions
+
+load_in_data: Loads in chr data and merges for and rev tables.
+
+filter_data: filters the data at pval < 0.05 and meandiff >0.4 or  (pval< .13 & meandiff >.4 & groupNumber != 0)
+
+composite: Runs through all of the previous funtions
