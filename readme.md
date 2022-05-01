@@ -1,0 +1,3 @@
+# Analysis of Epigenetic Markers in Breast Cancer
+
+This repo contains both the paper and the code used to analyze the underlying data. This project was made in collaboration with [Jazmine Castanon](https://www.jcast.org/) for a final project in Biostatistics taught by [Dr. Sun](https://www.math.txstate.edu/about/people/faculty/sun.html) as part of a masters program in statistics at Texas State University.
